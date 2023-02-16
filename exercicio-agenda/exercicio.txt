@@ -1,0 +1,4 @@
+Fazer uma lista telefonica
+Salvar em um arquivo agenda.txt
+Usar leitura e escrita de arquivos.txt
+Ler e montr em formato table e box responsivo em tela.
