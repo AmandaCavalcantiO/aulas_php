@@ -13,5 +13,19 @@ $(function () {
         $('.formPhone').mask(SPMaskBehavior, spOptions);
     }
 
+    $('.changeList').on
+
+
 
 });
+
+function changeListView() {
+    var element = $("#list");
+    if (element.hasClass("table-card")) {
+        element.removeClass("table-card");
+        element.addClass("table-row");
+    } else {
+        element.removeClass("table-row");
+        element.addClass("table-card");
+    }
+}
