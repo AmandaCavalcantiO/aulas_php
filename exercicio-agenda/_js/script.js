@@ -13,19 +13,18 @@ $(function () {
         $('.formPhone').mask(SPMaskBehavior, spOptions);
     }
 
-    $('.changeList').on
-
-
+    $('.changeList').click(function () {
+        var element = $("#list");
+        if (element.hasClass("table-grid")) {
+            element.removeClass("table-grid");
+            element.addClass("table-row");
+        } else {
+            element.removeClass("table-row");
+            element.addClass("table-grid");
+        }
+    }
+    )
 
 });
 
-function changeListView() {
-    var element = $("#list");
-    if (element.hasClass("table-card")) {
-        element.removeClass("table-card");
-        element.addClass("table-row");
-    } else {
-        element.removeClass("table-row");
-        element.addClass("table-card");
-    }
-}
+

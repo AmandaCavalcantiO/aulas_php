@@ -49,10 +49,12 @@ if ($_REQUEST) {
   </form>
 
   <div id="result" class="result">
-    <button class="changeList" onclick="changeListView()"></button>
+
+    <h1> Lista telefonica </h1>
+    <button class="changeList" ></button>
 
     <?php
-     echo "<div id='list' class= 'table table-card'>";
+     echo "<div id='list' class= 'table table-grid'>";
 
     if (file_exists($agenda) || is_file($agenda)) {
         $list = file($agenda, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
@@ -64,18 +66,6 @@ if ($_REQUEST) {
     echo "</div>;"
     ?>
   </div>
-  <script>
-    function changeListView() {
-    var element = $("#list");
-    if (element.hasClass("table-grid")) {
-        element.removeClass("table-grid");
-        element.addClass("table-row");
-    } else {
-        element.removeClass("table-row");
-        element.addClass("table-grid");
-    }
-}
-  </script>
 
 </body>
 </html>
